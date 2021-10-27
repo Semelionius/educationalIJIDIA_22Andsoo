@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App number one</string>
+    <string name="centerText">Hello World again!</string>
+    <string name="mainButtonText">Press me to show</string>
+    <string name="russianRadioButton">Russian</string>
+    <string name="englishRadioButton">English</string>
+</resources>
