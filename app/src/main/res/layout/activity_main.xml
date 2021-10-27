@@ -8,50 +8,49 @@
         tools:context=".MainActivity"
         android:id="@+id/mainLayout">
 
-        <RadioGroup
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/resultButtonText"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/checkBoxes"
+    <RadioGroup
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/resultButtonText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/checkBoxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/langRadioGroup">
+
+        <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/langRadioGroup">
-
-            <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="@string/russianRadioButton"/>
-            <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/englishRadioButton"/>
-
-        </RadioGroup>
-
-        <TableLayout
+                android:checked="true"
+                android:text="@string/russianRadioButton"/>
+        <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/resultButtonText"
-                app:layout_constraintStart_toEndOf="@id/langRadioGroup"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:id="@+id/checkBoxes"
-            >
+                android:text="@string/englishRadioButton"/>
 
-            <CheckBox
-                    android:text="Upper case"
-                    android:checked="true"
-                    android:id="@+id/UpperCheckBox">
-            </CheckBox>
+    </RadioGroup>
 
-            <CheckBox
-                    android:text="Down case"
-                    android:id="@+id/DownCheckBox">
-            </CheckBox>
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/resultButtonText"
+            app:layout_constraintStart_toEndOf="@id/langRadioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/checkBoxes">
 
-        </TableLayout>
+        <CheckBox
+                android:text="Upper case"
+                android:checked="true"
+                android:id="@+id/UpperCheckBox">
+        </CheckBox>
+
+        <CheckBox
+                android:text="Down case"
+                android:id="@+id/DownCheckBox">
+        </CheckBox>
+
+    </TableLayout>
 
     <TableLayout android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
@@ -60,14 +59,14 @@
                  app:layout_constraintLeft_toLeftOf="parent"
                  app:layout_constraintRight_toRightOf="parent"
                  app:layout_constraintTop_toTopOf="parent"
-                android:id="@+id/resultButtonText">
+                 android:id="@+id/resultButtonText">
 
-            <TextView
-                    android:text="@string/centerText"
-                    android:id="@+id/textView"/>
-             <Button
-                    android:text="@string/mainButtonText"
-                    android:id="@+id/mainButton"/>
+        <TextView
+                android:text="@string/centerText"
+                android:id="@+id/textView"/>
+        <Button
+                android:text="@string/mainButtonText"
+                android:id="@+id/mainButton"/>
 
     </TableLayout>
 
